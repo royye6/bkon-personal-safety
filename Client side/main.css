@@ -111,3 +111,41 @@ a {
     object-fit: cover;
     margin-bottom: 100px;
 }
+
+/********* intro *********/
+
+#intro {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.intro-icon {
+    display: flex;
+    align-self: center;
+}
+
+.intro-icon img{
+    height: 300px;
+}
+
+.intro-section {
+    display: flex;
+    align-self: center;
+}
+
+.intro-section h2 {
+    line-height: 40px;
+    font-weight: 800;
+    font-family: Inter;
+}
+
+.intro-section a {
+color: var(--blue);
+}
+
+.intro-section a:hover {
+    color: var(--siteblue);
+}
