@@ -1,0 +1,113 @@
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --gray: #808080;
+    --blue: #0000ff;
+    --siteblue: #002a54;
+}
+
+body {
+    background-color: var(--white);
+}
+
+a {
+    cursor: pointer;
+}
+
+#header-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-self: cente;
+}
+
+.logo img {
+    height: 30px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.navbar ul li {
+    display: inline;
+    float: left;
+}
+
+.navbar ul li a{
+    padding: 0 18px;
+    color: var(--black);
+    display: block;
+    font-weight: 600px;
+}
+
+.navbar ul li a:hover{
+    color: var(--blue);
+}
+
+.navbar ul li a.active {
+    color: var(--blue);
+}
+
+#hero {
+    width: 100%;
+    height: 600px;
+    background-color: var(--siteblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header h1 {
+    color: #f0f8ff;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.app-demo img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.app-stores {
+    display: flex;
+    flex-direction: column;
+}
+
+.android-store{
+    width: fit-content;
+}
+
+.apple-store {
+    margin-left: 10px;
+}
+
+.android-store img{
+    height: 220px;
+    object-fit: cover;
+}
+
+.apple-store img{
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
