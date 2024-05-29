@@ -4,6 +4,8 @@
     --gray: #808080;
     --blue: #0000ff;
     --siteblue: #002a54;
+    --darkgreen: #027202;
+    --light: #f7f1f1;
 }
 
 body {
@@ -136,7 +138,7 @@ a {
     align-self: center;
 }
 
-.intro-section h2 {
+.intro-section p {
     line-height: 40px;
     font-weight: 800;
     font-family: Inter;
@@ -148,4 +150,104 @@ color: var(--blue);
 
 .intro-section a:hover {
     color: var(--siteblue);
+}
+
+#mission {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mission-statement h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mission-statement-about-us p {
+    line-height: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/********* store section *********/
+
+#shop {
+    height: 800px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.products {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.ebooks {
+    height: 250px;
+    width: 250px;
+    background-color:var(--light);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.pepperspray {
+    height: 250px;
+    width: 250px;
+    background-color: var(--light);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.stun-devices {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color:var(--light);
+    border-radius: 10px;
+    justify-content: center;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.stun-devices img {
+    margin-top: 35px;
+    display: flex;
+    height: 190px;
+    align-self: center;
+}
+
+.iot-devices {
+    height: 250px;
+    width: 250px;
+    background-color: var(--light);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.visit-shop {
+    padding: 10px 50px;
+    background-color: var(--blue);
+    border-radius: 30px;
+    color: var(--white);
+}
+
+.visit-shop:hover {
+    padding: 10px 50px;
+    background-color: var(--darkgreen);
+    color: var(--white);
+    transition: 1s;
+}
+
+.shop-title h3 {
+    font-size: 36px;
 }
