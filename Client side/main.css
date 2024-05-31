@@ -131,6 +131,7 @@ a {
 
 .intro-icon img{
     height: 300px;
+    object-fit: cover;
 }
 
 .intro-section {
