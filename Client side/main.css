@@ -360,3 +360,14 @@ color: var(--blue);
     text-align: center;
     font-size: 50px;
 }
+
+/******** dynamic elements ********/
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
