@@ -1,8 +1,0 @@
-.gitignore
-*.pyc
-__pycache__
-*.log
-README.md
-venv/
-sql.sql
-products.db
