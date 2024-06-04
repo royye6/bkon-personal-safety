@@ -1,119 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/reset.css">
-    <link rel="stylesheet" href="/static/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>BKON</title>
-</head>
-<body>
-    <header id="header-main">
-        <div class="logo">
-            <a href="/templates/index.html"><img src="/static/assets/icons/bkon_logo_blue.png" alt="BKON logo"></a>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li class="navbar-home"><a href="/templates/index.html">Home</a></li>
-                <li class="navbar-app"><a href="/templates/app.html">App</a></li>
-                <li class="navbar-products"><a href="/templates/shop.html">Products</a></li>
-                <li class="navbar-contact"><a href="/templates/index.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends "base.html" %}
 
-    <main id="hero">
-        <div class="hero-header">
-            <h1>Safety at <br>Your <br>Fingertips</h1>
-        </div>
-        <div class="app-demo">
-            <img src="/static/assets/icons/phone1.png" alt="Phone Demo">
-        </div>
-        <div id="download" class="app-stores">
-            <div class="android-store"><a href="https://play.google.com/store/apps;"><img src="/static/assets/icons/android_store.png" alt=""></a></div>
-            <div class="apple-store"><a href="https://www.apple.com/app-store/"><img src="/static/assets/icons/apple_store.png" alt=""></a></div>
-        </div>
-    </main>
-
-    <section id="intro">
-       <div class="intro-icon">
-        <img src="/static/assets/icons/bkon_icon.png" alt="BKON Icon">
-       </div>
-       <div class="intro-section">
-        <p>Developed with unwavering focus on making emergency services <br>readily available,
-            BKON is your solution in emergencies. With features <br>like one-click emergency calling, location sharing with
-            trusted contacts <br>and high-crime area alerts, we empower you to take control of your safety.
-            <br>Download the <a href="#download">mobile app</a> and follow a few simple steps to get your device <br>up and running
-            with personal protection features.
-        </p>
-       </div> 
-    </section>
-
-    <section id="mission">
-        <div class="mission-statement">
-            <h2>Leveraging technology to make the world
-                <br> a better place is our mission.
-            </h2>
-        </div>
-        <div class="mission-statement-about-us">
-            <p> 
-                As a team of individuals dedicated to working on personal safety
-                solutions, <br>we strongly believe that health and safety is a right,
-                not a privilage. By leveraging <br>the technology and community around us we envisage a future in which the Boks losing <br>is the one and only threat 
-                to our well-being.
-            </p>
-        </div>
-    </section>
-
-    <section id="shop">
-        <div class="shop-title">
-            <h3>Visit the store to view some of our products</h3>
-        </div>
-        <div class="products">
-            <div class="ebooks">
-                <div class="ebooks-container">
-                    <img src="/static/assets/icons/ebooks1.png" alt="eBooks">
-                </div>
-            </div>
-            <div class="pepperspray">
-                <div class="pepperspray-container">
-                    <img src="/static/assets/icons/hotsauce1.png" alt="Pepperspray">
-                </div>
-            </div>
-            <div class="stun-devices">
-                <div class="stun-devices-container">
-                    <img src="/static/assets/icons/taser1.png" alt="Stun devices">
-                </div>
-            </div>
-            <div class="iot-devices">
-                <div class="iot-devices-container">
-                    <img src="/static/assets/icons/wearables1.png" alt="Wearables">
-                </div>
-            </div>
-        </div>
-        <div class="visit-shop"><a href="/templates/shop.html">Shop now</a></div>
-    </section>
-
-    <section id="contact-section">
-        <div class="contact-section-header">
-            <h4>Contact Us</h4>
-            <p>Our team is happy to answer your questions. Send us a message and we'll get back to you as soon as possible.</p>
-        </div>
-        <div class="contact-form">
-            <div class="contact-name"><input placeholder="Name"></div>
-            <div class="contact-email"><input placeholder="Email"></div>
-            <div class="contact-message"><input placeholder="Message"></div>
-            <a><div class="contact-send">Send</div></a>
-        </div>
-    </section>
-
-    <footer id="footer">
-        <p>Footer</p>
-        <p>&copy; 2024</p>
-    </footer>
     
-</body>
-</html>
+{% block content %}
+<main id="hero">
+    <div class="hero-header">
+        <h1>Safety at <br>Your <br>Fingertips</h1>
+    </div>
+    <div class="app-demo">
+        <img src="/static/assets/icons/phone1.png" alt="Phone Demo">
+    </div>
+    <div id="download" class="app-stores">
+        <div class="android-store"><a href="https://play.google.com/store/apps;"><img src="/static/assets/icons/android_store.png" alt=""></a></div>
+        <div class="apple-store"><a href="https://www.apple.com/app-store/"><img src="/static/assets/icons/apple_store.png" alt=""></a></div>
+    </div>
+</main>
+
+<section id="intro">
+    <div class="intro-icon">
+    <img src="/static/assets/icons/bkon_icon.png" alt="BKON Icon">
+    </div>
+    <div class="intro-section">
+    <p>Developed with unwavering focus on making emergency services <br>readily available,
+        BKON is your solution in emergencies. With features <br>like one-click emergency calling, location sharing with
+        trusted contacts <br>and high-crime area alerts, we empower you to take control of your safety.
+        <br>Download the <a href="#download">mobile app</a> and follow a few simple steps to get your device <br>up and running
+        with personal protection features.
+    </p>
+    </div> 
+</section>
+
+<section id="mission">
+    <div class="mission-statement">
+        <h2>Leveraging technology to make the world
+            <br> a better place is our mission.
+        </h2>
+    </div>
+    <div class="mission-statement-about-us">
+        <p> 
+            As a team of individuals dedicated to working on personal safety
+            solutions, <br>we strongly believe that health and safety is a right,
+            not a privilage. By leveraging <br>the technology and community around us we envisage a future in which the Boks losing <br>is the one and only threat 
+            to our well-being.
+        </p>
+    </div>
+</section>
+
+<section id="shop">
+    <div class="shop-title">
+        <h3>Visit the store to view some of our products</h3>
+    </div>
+    <div class="products">
+        <div class="ebooks">
+            <div class="ebooks-container">
+                <img src="/static/assets/icons/ebooks1.png" alt="eBooks">
+            </div>
+        </div>
+        <div class="pepperspray">
+            <div class="pepperspray-container">
+                <img src="/static/assets/icons/hotsauce1.png" alt="Pepperspray">
+            </div>
+        </div>
+        <div class="stun-devices">
+            <div class="stun-devices-container">
+                <img src="/static/assets/icons/taser1.png" alt="Stun devices">
+            </div>
+        </div>
+        <div class="iot-devices">
+            <div class="iot-devices-container">
+                <img src="/static/assets/icons/wearables1.png" alt="Wearables">
+            </div>
+        </div>
+    </div>
+    <div class="visit-shop"><a href="{{ url_for('shop') }}">Shop now</a></div>
+</section>
+
+<section id="contact-section">
+    <div class="contact-section-header">
+        <h4>Contact Us</h4>
+        <p>Our team is happy to answer your questions. Send us a message and we'll get back to you as soon as possible.</p>
+    </div>
+    <div class="contact-form">
+        <div class="contact-name"><input placeholder="Name"></div>
+        <div class="contact-email"><input placeholder="Email"></div>
+        <div class="contact-message"><input placeholder="Message"></div>
+        <a><div class="contact-send">Send</div></a>
+    </div>
+</section>
+
+<footer id="footer">
+    <p>Footer</p>
+    <div>
+        <img src="" alt="Twitter icon">
+        <img src="" alt="Facebook icon">
+        <img src="" alt="Linkedin icon">
+    </div>
+    <p>
+        <a href="#">Privacy Policy</a>
+        <a href="#"><br>Terms and Conditions</a>
+    </p>
+    <p>&copy; 2024</p>
+</footer>
+{% endblock %}

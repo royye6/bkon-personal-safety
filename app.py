@@ -14,7 +14,7 @@ def index():
 
 # app page route
 @app.route("/app")
-def app():
+def m_app():
     return render_template("app.html")
 
 

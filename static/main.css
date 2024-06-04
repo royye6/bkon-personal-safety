@@ -12,6 +12,18 @@ body {
     background-color: var(--white);
 }
 
+body::after {
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(/static/assets/icons/phone1.png), 
+    url(/static/assets/icons/android_store.png), 
+    url(/static/assets/icons/apple_store.png), 
+    url(/static/assets/icons/bkon_icon.png);
+}
+
 a {
     cursor: pointer;
 }
@@ -240,6 +252,7 @@ color: var(--blue);
     background-color: var(--blue);
     border-radius: 30px;
     color: var(--white);
+    display: block;
 }
 
 .visit-shop:hover {
@@ -351,6 +364,7 @@ color: var(--blue);
 
 
 #footer {
+    width: 100%;
     margin-top: 200px;
     background-color: var(--gray);
     height: 200px;
@@ -358,7 +372,7 @@ color: var(--blue);
 
 #footer p {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /******** dynamic elements ********/
