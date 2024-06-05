@@ -1,3 +1,25 @@
 {% extends "base.html" %}
 
-{% block content %} {% endblock %}
+{% block content %} 
+
+{% for ebook in ebooks %}
+{% if ebook.id == 1 %}
+<h1>{{ ebook.title }}</h1>
+<p>{{ ebook.price }}</p>
+<img src="{{ ebook.image_path }}" alt="Ebook 1 image">
+{% endif %}
+{% endfor %}
+
+{% for wearable in wearables %}
+{% if wearable.id == 1 %}
+<h1>{{ wearable.title }}</h1>
+<p>{{ wearable.price }}</p>
+<img src="{{ wearable.image_path }}" alt="Wearable 1 image">
+{% endif %}
+{% endfor %}
+
+{% endblock %}
+
+
+
+

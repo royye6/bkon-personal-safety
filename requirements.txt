@@ -2,5 +2,5 @@ Python 3.11.7
 Flask 3.0.3
 Werkzeug 3.0.3
 SQLite3 3.42.0
-SQLAlchemy 2.0.30
+Flask-SQLAlchemy 3.1.1
 Jinja2 3.1.4
