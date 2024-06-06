@@ -1,23 +1,122 @@
 {% extends "base.html" %}
 
 {% block content %} 
+<div class="search-bar">
+    <input type="search" name="search" id="search-input-area" placeholder="Search for products...">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+<main class="shop-body">
+    <div class="ad-space"></div>
+    <div class="shelf-container">
 
-{% for ebook in ebooks %}
-{% if ebook.id == 1 %}
-<h1>{{ ebook.title }}</h1>
-<p>{{ ebook.price }}</p>
-<img src="{{ ebook.image_path }}" alt="Ebook 1 image">
-{% endif %}
-{% endfor %}
+        <div class="store-navigation"></div>
 
-{% for wearable in wearables %}
-{% if wearable.id == 1 %}
-<h1>{{ wearable.title }}</h1>
-<p>{{ wearable.price }}</p>
-<img src="{{ wearable.image_path }}" alt="Wearable 1 image">
-{% endif %}
-{% endfor %}
+        <div class="categories-section">
+            <div class="all-categories">
+                <a href="#">All Categories ></a>
+            </div>
+            <hr class="break">
+            <div class="categories">
+                <div><a href="#">eBooks</a></div>
+                <div><a href="#">Pepperspray</a></div>
+                <div><a href="#">Stun-devices</a></div>
+                <div><a href="#">Wearables</a></div>
+            </div>
+        </div>
 
+        {% for ebook in ebooks %}
+        {% if ebook.id == 1 %}
+        <div id="box" class="box-1">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 1 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+            <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a>
+        </div>
+        {% endif %}
+
+        {% if ebook.id == 2 %}
+        <div id="box" class="box-2">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 2 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+            <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a>
+        </div>
+        {% endif %}
+ 
+        {% if ebook.id == 3 %}
+        <div id="box" class="box-3">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 3 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+           <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a> 
+        </div>
+        {% endif %}
+
+        {% if ebook.id == 4 %}
+        <div id="box" class="box-4">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 4 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+            <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a>
+        </div>
+        {% endif %}
+
+        {% if ebook.id == 5 %}
+        <div id="box" class="box-5">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 5 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+            <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a>
+        </div>
+        {% endif %}
+
+        {% if ebook.id == 6 %}
+        <div id="box" class="box-6">
+            <div class="image-container">
+                <img src="{{ ebook.image_path }}" alt="Ebook 6 image">
+            </div>
+            <div class="title-container">
+                <h3>{{ ebook.title }}</h3>
+            </div>
+            <div class="price-container">
+                <p>{{ ebook.price }}</p>
+            </div>
+            <a href="#"><div class="add-to-cart"><p>Add to Cart</p></div></a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</main>
 {% endblock %}
 
 
