@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask import url_for, redirect
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
@@ -78,7 +78,27 @@ class Wearable(db.Model):
 # index page route
 @app.route("/", methods=["POST", "GET"]) 
 def index():
+    if request.method == 'POST':
+        return handle_message()
     return render_template("index.html")
+
+
+@app.route("/message", methods=['POST', 'GET'])
+def handle_message():
+    name = request.form["name"]
+    email = request.form["email"]
+    message = request.form["message"]
+
+    if name != '' and email != '' and message != '':
+        new_message = ContactForm(name=name, email=email, message=message)
+        db.session.add(new_message)
+        db.session.commit()
+        print('Message was sent successfully!')
+        return jsonify({'success': True})
+        # redirect('/')
+    else:
+        return jsonify({'success': False, 'error': 'Please fill in all the required fields'})  
+        # redirect('/')
 
 
 # app page route

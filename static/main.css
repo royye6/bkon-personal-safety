@@ -358,10 +358,11 @@ color: var(--blue);
     font-weight: 600;
     color: var(--aliceblue);
     background-color: var(--siteblue);
+    cursor: pointer;
 }
 
 .contact-send:hover {
-    background-color: var(--stdblue);
+    background-color: var(--sitebluehover);
     transition: 1s;
     color: var(--black);
 }
@@ -434,6 +435,7 @@ color: var(--blue);
     margin-top: 80px;
     background-image: url(/static/assets/icons/sa_cbd.jpg);
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .shelf-container {

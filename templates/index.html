@@ -79,12 +79,24 @@
         <h4>Contact Us</h4>
         <p>Our team is happy to answer your questions. Send us a message and we'll get back to you as soon as possible.</p>
     </div>
-    <div class="contact-form">
-        <div class="contact-name"><input placeholder="Name"></div>
-        <div class="contact-email"><input placeholder="Email"></div>
-        <div class="contact-message"><input placeholder="Message"></div>
-        <a><div class="contact-send">Send</div></a>
-    </div>
+    <form class="contact-form" action="/message" method="POST">
+        <div class="contact-name">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="contact-email">
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="contact-message">
+            <label for="message"></label>
+            <input type="text" id="message" name="message" placeholder="Message">
+        </div>
+        <div class="contact-send">
+            <button type="submit" >Send</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
 </section>
 
 <footer id="footer">
