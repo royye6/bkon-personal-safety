@@ -76,7 +76,7 @@ class Wearable(db.Model):
 
 
 # index page route
-@app.route("/", methods=["POST", "GET"]) 
+@app.route("/", methods=['POST', 'GET']) 
 def index():
     if request.method == 'POST':
         return handle_message()
@@ -95,20 +95,20 @@ def handle_message():
         db.session.commit()
         print('Message was sent successfully!')
         return jsonify({'success': True})
-        # redirect('/')
+        # return redirect('/')
     else:
         return jsonify({'success': False, 'error': 'Please fill in all the required fields'})  
-        # redirect('/')
+        # return redirect('/')
 
 
 # app page route
-@app.route("/app", methods=["GET"])
+@app.route("/app", methods=['POST', 'GET'])
 def m_app():
     return render_template("app.html")
 
 
 # store page route
-@app.route("/shop", methods=["GET"])
+@app.route("/shop", methods=['GET'])
 def shop():
     ebooks = db.session.execute(db.select(Ebook).order_by(Ebook.id)).scalars()
     pepperspray = db.session.execute(db.select(PepperSpray).order_by(PepperSpray.id)).scalars()

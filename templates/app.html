@@ -1,3 +1,20 @@
 {% extends "base.html" %}
 
-{% block content %} {% endblock %}
+{% block content %} 
+<main id="app-section">
+   
+    <div class="video-container">
+        <iframe id="temp-video" width="650" height="550" 
+        src="https://www.youtube.com/embed/ERSAaQrUpbc?si=41plxLR0U2reEi76" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <div class="sponsors-section">
+        <div class="reviews-container"></div>
+        <div class="sponsors-container"></div>
+    </div>
+</main>
+{% endblock %}

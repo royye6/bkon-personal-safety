@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="visit-shop"><a href="{{ url_for('shop') }}">Shop now</a></div>
+    <a href="{{ url_for('shop') }}"><div class="visit-shop">Shop now</div></a>
 </section>
 
 <section id="contact-section">
@@ -96,11 +96,9 @@
             <button type="submit" >Send</button>
         </div>
     </form>
-    <script src="main.js"></script>
 </section>
 
 <footer id="footer">
-    <p>Footer</p>
     <div>
         <img src="" alt="Twitter icon">
         <img src="" alt="Facebook icon">
@@ -112,4 +110,5 @@
     </p>
     <p>&copy; 2024</p>
 </footer>
+<script src="/static/main.js"></script>
 {% endblock %}
