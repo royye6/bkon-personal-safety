@@ -256,7 +256,7 @@ a {
 }
 
 .visit-shop {
-    padding: 10px 50px;
+    padding: 10px 80px;
     background-color: var(--blue);
     border-radius: 30px;
     color: var(--white);
@@ -264,7 +264,6 @@ a {
 }
 
 .visit-shop:hover {
-    padding: 10px 50px;
     background-color: var(--darkgreen);
     color: var(--white);
     transition: 1s;
@@ -699,4 +698,230 @@ a {
 
 
 
+/*************** responsiveness ***************/
+/******** index ********/
 
+@media screen and (max-width: 1126px ) {
+    #header-main {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 150px;
+    }
+
+    .navbar {
+        margin-right: 50px;
+    }
+
+    .hero-header h1 {
+        display: none;
+    }
+
+    #hero-header {
+        justify-content: center;
+    }
+
+    .intro-icon img {
+        height: 250px;
+    }
+
+    .intro-section p {
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .mission-statement h2 {
+        font-size: 37px;
+    }
+
+    .mission-statement-about-us p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1032px ) {
+    .shop-title h3 {
+        font-size: 34px;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .products div {
+        height: 200px;
+        width: 200px;
+    }
+
+    .stun-devices img {
+        height: 160px;
+        margin-left: 16px;
+        margin-top: 28px;
+    }
+
+    .visit-shop {
+        margin-top: 100px;
+    }
+
+    .contact-section-header h4 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .intro-icon img {
+        display: none;
+    }
+
+    .intro-section p {
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .app-stores {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 863px ) { 
+    .app-stores {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+    .navbar {
+        margin-right: 70px;
+    }
+    .navbar ul li:nth-child(1) {
+        display: none;
+    }
+
+    .navbar ul li:nth-child(4) {
+        display: none;
+    }
+
+    .app-stores {
+        display: none;
+    }
+
+    .intro-section p {
+        text-align: left;
+        margin-right: 65px;
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    .mission-statement h2 {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .mission-statement-about-us p {
+        font-size: 15px;
+    }
+
+    .contact-form {
+        height: 275px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 720px ) {
+    .logo {
+        margin-right: 60px;
+    }
+
+    .logo img {
+        height: 25px;
+    }
+
+    .app-demo img {
+        height: 400px;
+    }
+
+    .mission-statement h2 {
+        font-size: 28px;
+    }
+
+    .mission-statement-about-us p{
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 625px ) {
+    .logo img {
+        height: 20px;
+    }
+
+    .navbar ul li:nth-child(3) {
+        display: none;
+    }
+
+    .mission-statement h2 {
+        font-size: 22px;
+    }
+
+    .mission-statement-about-us p {
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .shop-title h3 {
+        font-size: 22px;
+    }
+
+    .contact-section-header {
+        width: 500px;
+    }
+
+    .contact-section-header h4 {
+        font-size: 25px;
+    }
+
+    .contact-section-header p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .contact-form div {
+        width: 400px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 430px ) {
+    .navbar {
+        width: 50px;
+        margin-right: 100px;
+    }
+
+    .logo {
+        margin-right: 60px;
+    }
+}
+
+
+/********** app **********/
+
+@media screen and (max-width: 920px ) {
+    #temp-video {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 680px ) {
+    #temp-video {
+        width: 350px;
+        height: 250px;
+    }
+}
