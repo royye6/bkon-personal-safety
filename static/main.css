@@ -58,7 +58,6 @@ a {
     height: 100%;
     justify-content: space-evenly;
     padding: 20px;
-
 }
 
 .navbar ul {
@@ -923,5 +922,39 @@ a {
     #temp-video {
         width: 350px;
         height: 250px;
+    }
+}
+
+
+/********** store **********/
+
+@media screen and (max-width: 1216px ) {
+    .ad-space {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1126px ) {
+    #search-input-area {
+        width: 50%;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1032px ) {
+    .ad-space {
+        width: 84%;
+    }
+
+    .categories-section {
+        display: none;
+    }
+
+    .shelf-container {
+        margin-right: 130px;
+    }
+
+    .shelf-container div{
+        grid: wrap;
     }
 }
