@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/reset.css">
     <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -22,12 +23,24 @@
                 <li class="navbar-home"><a href="{{ url_for('index') }}">Home</a></li>
                 <li class="navbar-app"><a href="{{ url_for('m_app') }}">App</a></li>
                 <li class="navbar-products"><a href="{{ url_for('shop') }}">Products</a></li>
-                <li class="navbar-contact"><a href="{{ url_for('index') }}">Contact Us</a></li>
+                <li class="navbar-contact"><a href="#footer">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     {% block content %} {% endblock %}
 
+    <footer id="footer">
+        <div class="socials">
+            <img src="" alt="Twitter icon">
+            <img src="" alt="Facebook icon">
+            <img src="" alt="Linkedin icon">
+        </div>
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#"><br>Terms and Conditions</a>
+        </p>
+        <p>&copy; 2024</p>
+    </footer>
 </body>
 </html>
