@@ -11,6 +11,7 @@
     --shopsitegray: #f4f4f4;
     --cartgreen: #1c8644;
     --product-title-gray: #555557;
+    --tomato: #ff6347;
 }
 
 body {
@@ -377,6 +378,10 @@ a {
     cursor: pointer;
 }
 
+#send {
+    height: 35px;
+}
+
 .contact-send:hover {
     background-color: var(--sitebluehover);
     transition: 1s;
@@ -614,10 +619,9 @@ a {
 #app-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--shopsitegray);
-    height: 1000px;
+    height: 2000px;
     width: 100%;
 }
 
@@ -633,11 +637,26 @@ a {
 }
 
 .sponsors-section {
-    background-color: var(--white);
+    display: flex;
+    justify-content: center ;
     width: 1200px;
     height: 500px;
     margin-top: 200px;
 } 
+
+.sponsors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    width: 800px;
+    height: 500px;
+    background-color: var(--tomato);
+}
+
+.reviews-container {
+    height: 300px;
+    width: 500px;
+    background-color: var(--white);
+}
 
 
 /*************** responsiveness ***************/
@@ -918,3 +937,5 @@ a {
         opacity: 1;
     }
 }
+
+

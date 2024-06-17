@@ -1,4 +1,4 @@
-const form = document.getElementById('message');
+const form = document.getElementById('send');
 form.addEventListener('submit', (event => {
     event.preventDefault();
     const data = {
