@@ -539,11 +539,7 @@ a {
     border-radius: 20px;
 }
 
-.active {
-    background-color: var(--sitebluehover)
-}
-
-.categories.active {
+.categories div:active {
     background-color: var(--sitebluehover)
 }
 

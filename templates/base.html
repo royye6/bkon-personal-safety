@@ -19,9 +19,9 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li class="navbar-home"><a href="{{ url_for('index') }}">Home</a></li>
-                <li class="navbar-app"><a href="{{ url_for('m_app') }}">App</a></li>
-                <li class="navbar-products"><a href="{{ url_for('shop') }}">Products</a></li>
+                <li class="navbar-home"><a href="{{ url_for('index') }}" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+                <li class="navbar-app"><a href="{{ url_for('m_app') }}" class="nav-link {% if request.path == '/app' %}active{% endif %}">App</a></li>
+                <li class="navbar-products"><a href="{{ url_for('shop') }}" class="nav-link {% if request.path == '/shop' %}active{% endif %}">Products</a></li>
                 <li class="navbar-contact"><a href="#footer">Contact Us</a></li>
             </ul>
         </nav>
