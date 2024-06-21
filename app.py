@@ -75,6 +75,18 @@ class Wearable(db.Model):
         return f"<Wearable('{self.id}', '{self.title}', '{self.price}', '{self.image_path}>)"
 
 
+class Review(db.Model):
+    __tablename__ = 'reviews'
+
+    id: Mapped[int] = mapped_column(db.Integer, primary_key=True)
+    name: Mapped[str] = mapped_column(db.String, nullable=False)
+    comment: Mapped[str] = mapped_column(db.String, nullable=False)
+    dp: Mapped[str] = mapped_column(db.String, nullable=False)
+
+    def __str__(self):
+        return f"Review('{self.id}', '{self.name}', '{self.comment}', '{self.dp}')"
+
+
 # index page route
 @app.route("/", methods=['POST', 'GET']) 
 def index():
@@ -104,7 +116,8 @@ def handle_message():
 # app page route
 @app.route("/app", methods=['POST', 'GET'])
 def m_app():
-    return render_template("app.html")
+    reviews = db.session.execute(db.select(Review).order_by(Review.id)).scalars()
+    return render_template("app.html", reviews=reviews)
 
 
 # store page route

@@ -13,7 +13,11 @@
         </iframe>
     </div>
     <div class="sponsors-section">
-        <div class="sponsors-container"><div class="reviews-container"></div></div>
+        <div class="sponsors-container">
+            {% for review in reviews %}
+            <div class="reviews-container"></div>
+            {% endfor %}
+        </div>
     </div>
 </main>
 {% endblock %}
